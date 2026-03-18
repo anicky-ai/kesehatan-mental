@@ -35,8 +35,8 @@
                     animation: {
                         'blob': 'blob 7s infinite',
                         'breathe': 'breathe 8s infinite ease-in-out',
-                        'slide-in': 'slideIn 0.4s ease-out forwards',
-                        'slide-out': 'slideOut 0.4s ease-in forwards',
+                        'slide-in': 'slideIn 0.5s forwards',
+                        'slide-out': 'slideOut 0.5s forwards',
                         'fade-in': 'fadeIn 0.5s forwards',
                     },
                     keyframes: {
@@ -120,10 +120,7 @@
         <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
             <!-- Logo -->
             <a href="#" onclick="navigate('home')" class="text-xl md:text-2xl font-bold text-pastel-teal flex items-center gap-2">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="text-pastel-teal">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-                MindCare
+                <i class="fa-solid fa-heart"></i> MindCare
             </a>
             
             <!-- Desktop Nav -->
@@ -167,10 +164,7 @@
     <div id="mobile-menu" class="fixed top-0 left-0 w-[85%] max-w-sm h-full bg-white z-50 transform -translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto">
         <div class="p-5 flex justify-between items-center border-b">
             <a href="#" class="text-xl font-bold text-pastel-teal flex items-center gap-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-pastel-teal">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-                MindCare
+                <i class="fa-solid fa-heart"></i> MindCare
             </a>
             <button onclick="toggleMobileMenu()" class="text-gray-500 hover:text-red-500 text-2xl p-2 -mr-2"><i class="fa-solid fa-xmark"></i></button>
         </div>
@@ -206,10 +200,10 @@
     <!-- MAIN CONTENT AREA -->
     <main class="flex-grow container mx-auto px-4 md:px-6 py-6 md:py-8 relative z-10 w-full">
 
-        <!-- 1. HOME SECTION -->
+        <!-- 1. HOME SECTION (Landing Page Lengkap) -->
         <section id="page-home" class="page-section animate-fade-in w-full">
             
-            <!-- A. Hero Section -->
+            <!-- A. Hero Section (Tampilan Paling Atas) -->
             <div class="flex flex-col md:flex-row items-center justify-between min-h-[70vh] mb-16 md:mb-24">
                 <div class="md:w-1/2 space-y-5 md:space-y-6 text-center md:text-left">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -385,12 +379,7 @@
             <div class="space-y-4">
                 <div class="bg-white p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between cursor-pointer hover:shadow-md transition gap-4">
                     <div class="flex items-center gap-4 md:gap-6 w-full sm:w-auto">
-                        <div class="w-12 h-12 md:w-16 md:h-16 bg-[#e6f7ed] text-[#22c55e] rounded-xl md:rounded-2xl flex items-center justify-center shrink-0">
-                            <!-- Custom SVG Ikon Buku -->
-                            <svg width="24" height="24" class="md:w-8 md:h-8" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6 4h5v16H6c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm12 0h-5v16h5c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/>
-                            </svg>
-                        </div>
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-green-100 text-green-500 rounded-xl md:rounded-2xl flex items-center justify-center text-xl md:text-2xl shrink-0"><i class="fa-solid fa-book-open"></i></div>
                         <div>
                             <h3 class="font-bold text-base md:text-lg leading-tight">Modul 1: Dasar-dasar Manajemen Stres</h3>
                             <p class="text-xs md:text-sm text-gray-500 mt-1">3 Video • 2 Kuis • Durasi 45 Menit</p>
@@ -400,12 +389,7 @@
                 </div>
                 <div class="bg-white p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between cursor-pointer hover:shadow-md transition gap-4">
                     <div class="flex items-center gap-4 md:gap-6 w-full sm:w-auto">
-                        <div class="w-12 h-12 md:w-16 md:h-16 bg-[#e6f0fd] text-[#3b82f6] rounded-xl md:rounded-2xl flex items-center justify-center shrink-0">
-                            <!-- Custom SVG Ikon Otak -->
-                            <svg width="24" height="24" class="md:w-8 md:h-8" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 3c-4.4 0-8 3.6-8 8 0 1.5.4 2.9 1.1 4.1C4.4 16 4 17 4 18c0 1.1.9 2 2 2h1v1c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-1h2v1c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-1h1c1.1 0 2-.9 2-2 0-1-.4-2-1.1-2.9.7-1.2 1.1-2.6 1.1-4.1 0-4.4-3.6-8-8-8zm-1 15H9v-2h2v2zm4 0h-2v-2h2v2z"/>
-                            </svg>
-                        </div>
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 text-blue-500 rounded-xl md:rounded-2xl flex items-center justify-center text-xl md:text-2xl shrink-0"><i class="fa-solid fa-brain"></i></div>
                         <div>
                             <h3 class="font-bold text-base md:text-lg leading-tight">Modul 2: Mengenal Cognitive Behavioral Therapy</h3>
                             <p class="text-xs md:text-sm text-gray-500 mt-1">5 Video • 1 Jurnal • Durasi 1 Jam 15 Menit</p>
@@ -525,60 +509,13 @@
 
             <div class="bg-white p-5 md:p-6 rounded-2xl md:rounded-3xl shadow-md text-left mx-4 md:mx-0">
                 <h3 class="font-bold text-base md:text-lg mb-3 md:mb-4">Soundtrack Ketenangan</h3>
-                
-                <!-- Audio Elements (Hidden) - Menggunakan Multiple Sources & Preload Auto agar anti-error -->
-                <audio id="audio-rain" loop preload="auto">
-                    <source src="https://cdn.pixabay.com/audio/2021/08/09/audio_82181fc182.mp3" type="audio/mpeg">
-                    <source src="https://actions.google.com/sounds/v1/weather/rain_heavy_loud.ogg" type="audio/ogg">
-                </audio>
-                <audio id="audio-waves" loop preload="auto">
-                    <source src="https://cdn.pixabay.com/audio/2022/01/18/audio_d07cc7cc95.mp3" type="audio/mpeg">
-                    <source src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" type="audio/ogg">
-                </audio>
-                <audio id="audio-forest" loop preload="auto">
-                    <source src="https://cdn.pixabay.com/audio/2021/08/09/audio_15e57519bb.mp3" type="audio/mpeg">
-                    <source src="https://actions.google.com/sounds/v1/animals/birds_in_forest.ogg" type="audio/ogg">
-                </audio>
-                <audio id="audio-fire" loop preload="auto">
-                    <source src="https://cdn.pixabay.com/audio/2022/02/07/audio_01dc07787f.mp3" type="audio/mpeg">
-                    <source src="https://actions.google.com/sounds/v1/domestic/fireplace.ogg" type="audio/ogg">
-                </audio>
-
                 <div class="space-y-2 md:space-y-3">
-                    <!-- Track 1: Hujan -->
-                    <div class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 transition">
+                    <div class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-pastel-blue rounded-full flex items-center justify-center text-white shrink-0"><i class="fa-solid fa-cloud-rain"></i></div>
-                            <div><p class="font-bold text-sm md:text-base">Hujan Rintik di Kaca</p><p class="text-[10px] md:text-xs text-gray-400">Suara Alam • Fokus & Relaksasi</p></div>
+                            <div><p class="font-bold text-sm md:text-base">Hujan Rintik di Kaca</p><p class="text-[10px] md:text-xs text-gray-400">15 Menit</p></div>
                         </div>
-                        <button onclick="toggleAudio('audio-rain', this)" class="text-pastel-blue hover:text-blue-500 transition transform hover:scale-110"><i class="fa-solid fa-circle-play text-2xl md:text-3xl"></i></button>
-                    </div>
-                    
-                    <!-- Track 2: Ombak -->
-                    <div class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-teal-300 rounded-full flex items-center justify-center text-white shrink-0"><i class="fa-solid fa-water"></i></div>
-                            <div><p class="font-bold text-sm md:text-base">Suara Ombak Pantai</p><p class="text-[10px] md:text-xs text-gray-400">Suara Alam • Ketenangan Pikiran</p></div>
-                        </div>
-                        <button onclick="toggleAudio('audio-waves', this)" class="text-teal-400 hover:text-teal-600 transition transform hover:scale-110"><i class="fa-solid fa-circle-play text-2xl md:text-3xl"></i></button>
-                    </div>
-
-                    <!-- Track 3: Hutan & Burung -->
-                    <div class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-pastel-green rounded-full flex items-center justify-center text-white shrink-0"><i class="fa-solid fa-tree"></i></div>
-                            <div><p class="font-bold text-sm md:text-base">Hutan & Kicauan Burung</p><p class="text-[10px] md:text-xs text-gray-400">Suara Alam • Meditasi Pagi</p></div>
-                        </div>
-                        <button onclick="toggleAudio('audio-forest', this)" class="text-green-500 hover:text-green-700 transition transform hover:scale-110"><i class="fa-solid fa-circle-play text-2xl md:text-3xl"></i></button>
-                    </div>
-
-                    <!-- Track 4: Api Unggun -->
-                    <div class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-pastel-yellow rounded-full flex items-center justify-center text-white shrink-0"><i class="fa-solid fa-fire"></i></div>
-                            <div><p class="font-bold text-sm md:text-base">Kehangatan Api Unggun</p><p class="text-[10px] md:text-xs text-gray-400">Suara Alam • Pengantar Tidur</p></div>
-                        </div>
-                        <button onclick="toggleAudio('audio-fire', this)" class="text-yellow-500 hover:text-yellow-600 transition transform hover:scale-110"><i class="fa-solid fa-circle-play text-2xl md:text-3xl"></i></button>
+                        <button class="text-pastel-blue"><i class="fa-solid fa-circle-play text-xl md:text-2xl"></i></button>
                     </div>
                 </div>
             </div>
@@ -886,31 +823,21 @@
             <!-- STATISTIK (Sesuai Desain, Tanpa Rating) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-16 md:mb-24">
                 <!-- Stat 1 -->
-                <div class="bg-[#f2f9f8] rounded-2xl md:rounded-3xl p-6 md:p-10 text-center hover:shadow-md transition duration-300">
-                    <svg class="mx-auto mb-4 text-[#209686]" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    <h3 class="text-3xl md:text-4xl font-bold text-[#1f8779] mb-1 md:mb-2">500+</h3>
+                <div class="bg-teal-50/50 rounded-2xl md:rounded-3xl p-6 md:p-10 text-center shadow-sm hover:shadow-md transition duration-300">
+                    <i class="fa-solid fa-user-group text-3xl md:text-4xl text-teal-600 mb-3 md:mb-4"></i>
+                    <h3 class="text-3xl md:text-4xl font-bold text-teal-600 mb-1 md:mb-2">500+</h3>
                     <p class="text-gray-500 text-xs md:text-sm font-medium">Psikolog Profesional</p>
                 </div>
                 <!-- Stat 2 -->
-                <div class="bg-[#f2f9f8] rounded-2xl md:rounded-3xl p-6 md:p-10 text-center hover:shadow-md transition duration-300">
-                    <svg class="mx-auto mb-4 text-[#209686]" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                    </svg>
-                    <h3 class="text-3xl md:text-4xl font-bold text-[#1f8779] mb-1 md:mb-2">10,000+</h3>
+                <div class="bg-teal-50/50 rounded-2xl md:rounded-3xl p-6 md:p-10 text-center shadow-sm hover:shadow-md transition duration-300">
+                    <i class="fa-regular fa-heart text-3xl md:text-4xl text-teal-600 mb-3 md:mb-4"></i>
+                    <h3 class="text-3xl md:text-4xl font-bold text-teal-600 mb-1 md:mb-2">10,000+</h3>
                     <p class="text-gray-500 text-xs md:text-sm font-medium">Pengguna Aktif</p>
                 </div>
-                <!-- Stat 3 (Sesi Konsultasi) -->
-                <div class="bg-[#f2f9f8] rounded-2xl md:rounded-3xl p-6 md:p-10 text-center hover:shadow-md transition duration-300">
-                    <svg class="mx-auto mb-4 text-[#209686]" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="8" r="7"></circle>
-                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                    </svg>
-                    <h3 class="text-3xl md:text-4xl font-bold text-[#1f8779] mb-1 md:mb-2">50,000+</h3>
+                <!-- Stat 3 -->
+                <div class="bg-teal-50/50 rounded-2xl md:rounded-3xl p-6 md:p-10 text-center shadow-sm hover:shadow-md transition duration-300">
+                    <i class="fa-solid fa-ribbon text-3xl md:text-4xl text-teal-600 mb-3 md:mb-4"></i>
+                    <h3 class="text-3xl md:text-4xl font-bold text-teal-600 mb-1 md:mb-2">50,000+</h3>
                     <p class="text-gray-500 text-xs md:text-sm font-medium">Sesi Konsultasi</p>
                 </div>
             </div>
@@ -922,33 +849,24 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 <!-- Misi 1 -->
                 <div class="bg-white rounded-2xl md:rounded-3xl p-8 md:p-10 text-center shadow-md border border-gray-50 hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e9f5f4] rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#209686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-teal-50 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6">
+                        <i class="fa-solid fa-bullseye text-xl md:text-2xl text-teal-600"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-800">Aksesibilitas</h3>
                     <p class="text-gray-500 text-sm leading-relaxed">Membuat layanan kesehatan mental mudah diakses oleh semua orang di Indonesia, kapan pun dan di mana pun.</p>
                 </div>
                 <!-- Misi 2 -->
                 <div class="bg-white rounded-2xl md:rounded-3xl p-8 md:p-10 text-center shadow-md border border-gray-50 hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e9f5f4] rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#209686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                            <polyline points="16 7 22 7 22 13"></polyline>
-                        </svg>
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-teal-50 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6">
+                        <i class="fa-solid fa-chart-line text-xl md:text-2xl text-teal-600"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-800">Edukasi</h3>
                     <p class="text-gray-500 text-sm leading-relaxed">Meningkatkan kesadaran dan pemahaman masyarakat tentang pentingnya kesehatan mental melalui edukasi berkelanjutan.</p>
                 </div>
                 <!-- Misi 3 -->
                 <div class="bg-white rounded-2xl md:rounded-3xl p-8 md:p-10 text-center shadow-md border border-gray-50 hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e9f5f4] rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#209686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-teal-50 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6">
+                        <i class="fa-regular fa-comment text-xl md:text-2xl text-teal-600"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-800">Koneksi</h3>
                     <p class="text-gray-500 text-sm leading-relaxed">Menghubungkan individu yang membutuhkan dengan psikolog profesional dan komunitas suportif.</p>
@@ -962,12 +880,7 @@
     <footer class="bg-white mt-auto py-6 md:py-8 border-t border-gray-100 w-full">
         <div class="container mx-auto px-4 md:px-6 text-center md:flex justify-between items-center">
             <div class="mb-3 md:mb-0 text-pastel-teal font-bold text-lg md:text-xl flex items-center justify-center md:justify-start gap-2">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="text-pastel-teal">
-                    <path d="M12 2C12 2 8 7 8 11.5C8 13.9853 10.0147 16 12 16C13.9853 16 16 13.9853 16 11.5C16 7 12 2 12 2Z" />
-                    <path d="M21.5 11C21.5 11 17 9 14.5 12C13 13.8 13 17 13 17C13 17 17 18.5 20.5 15.5C23.3 13.3 21.5 11 21.5 11Z" />
-                    <path d="M2.5 11C2.5 11 7 9 9.5 12C11 13.8 11 17 11 17C11 17 7 18.5 3.5 15.5C0.7 13.3 2.5 11 2.5 11Z" />
-                </svg>
-                MindCare
+                <i class="fa-solid fa-heart"></i> MindCare
             </div>
             <p class="text-gray-400 text-xs md:text-sm">© 2026 MindCare. Kesehatan Mental Anda, Prioritas Kami.</p>
         </div>
@@ -1381,7 +1294,7 @@
             return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
         }
 
-        // Logic Meditasi & Audio Player
+        // Logic Meditasi
         const breatheText = document.getElementById('breathe-text');
         if (breatheText) {
             setInterval(() => {
@@ -1392,64 +1305,6 @@
                     breatheText.innerText = 'Tarik...';
                 }
             }, 8000);
-        }
-
-        // Audio Player State
-        let currentAudio = null;
-        let currentPlayBtn = null;
-
-        function toggleAudio(audioId, btnElement) {
-            const audioToPlay = document.getElementById(audioId);
-            const iconElement = btnElement.querySelector('i');
-
-            // Jika mengeklik audio yang sedang berjalan (Pause/Play toggle)
-            if (currentAudio === audioToPlay) {
-                if (audioToPlay.paused) {
-                    const playPromise = audioToPlay.play();
-                    if (playPromise !== undefined) {
-                        playPromise.then(() => {
-                            iconElement.classList.replace('fa-circle-play', 'fa-circle-pause');
-                        }).catch(error => {
-                            console.error("Audio playback failed:", error);
-                            alert("Gagal memutar audio. Pastikan koneksi internet stabil.");
-                        });
-                    }
-                } else {
-                    audioToPlay.pause();
-                    iconElement.classList.replace('fa-circle-pause', 'fa-circle-play');
-                }
-                return;
-            }
-
-            // Jika ada audio lain yang sedang dimainkan, matikan dulu
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0; // Reset ke awal
-                if (currentPlayBtn) {
-                    const prevIcon = currentPlayBtn.querySelector('i');
-                    if(prevIcon) prevIcon.classList.replace('fa-circle-pause', 'fa-circle-play');
-                }
-            }
-
-            // Mainkan audio baru yang dipilih dengan penanganan Promise
-            const playPromise = audioToPlay.play();
-            if (playPromise !== undefined) {
-                playPromise.then(() => {
-                    iconElement.classList.replace('fa-circle-play', 'fa-circle-pause');
-                    // Simpan state audio yang aktif
-                    currentAudio = audioToPlay;
-                    currentPlayBtn = btnElement;
-                }).catch(error => {
-                    console.error("Audio playback failed:", error);
-                    // Kembalikan ikon jika audio gagal diputar
-                    iconElement.classList.replace('fa-circle-pause', 'fa-circle-play');
-                    alert("Gagal memuat sumber suara. Browser Anda mungkin memblokir pemutaran otomatis.");
-                });
-            } else {
-                iconElement.classList.replace('fa-circle-play', 'fa-circle-pause');
-                currentAudio = audioToPlay;
-                currentPlayBtn = btnElement;
-            }
         }
     </script>
 </body>
